@@ -1,5 +1,5 @@
 class Node:
-    def _init_(self,data,level,fval):
+    def __init__(self,data,level,fval):
         """ Initialize the node with the data, level of the node and the calculated fvalue """
         self.data = data
         self.level = level
@@ -53,7 +53,7 @@ class Node:
 
 
 class Puzzle:
-    def _init_(self,size):
+    def __init__(self,size):
         """ Initialize the puzzle size by the specified size,open and closed lists to empty """
         self.n = size
         self.open = []
@@ -118,6 +118,7 @@ class Puzzle:
 
 puz = Puzzle(3)
 puz.process()
+
 
 #start  goal 
 #1 2 3    1 2 3
